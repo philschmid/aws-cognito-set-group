@@ -1,0 +1,18 @@
+{
+  "name": "cognitoFunc",
+  "version": "1.0.0",
+  "description": "",
+  "main": "handler.js",
+  "scripts": {
+    "test": "jest -- handler.test.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "amazon-cognito-identity-js": "^3.0.7",
+    "aws-amplify": "^1.1.19",
+    "aws-sdk": "^2.411.0",
+    "jest": "^24.1.0"
+  }
+}
