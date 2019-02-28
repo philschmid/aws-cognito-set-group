@@ -7,7 +7,7 @@ const CognitoIdentityServiceProvider = new AWS.CognitoIdentityServiceProvider({
   region: 'eu-central-1'
 })
 
-module.exports.hello = async (event, context) => {
+module.exports.addRole = async (event, context) => {
   const params = {
     GroupName: event.group || 'User',
     UserPoolId: event.userPoolId,
@@ -22,7 +22,6 @@ module.exports.hello = async (event, context) => {
   console.log(event.userName)
   console.log(event.userPoolId)
   console.log(event.role)
-  context.done(null, "erfolgreich angemeldet");
-
+  context.done(null, 'Erfolgreich angemeldet!!!!')
   return true
 }

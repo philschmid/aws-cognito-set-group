@@ -1,8 +1,8 @@
-var x = require('./handler')
+var test = require('./handler')
 
 it('Test CreateUser', async () => {
   expect(
-    await x.hello({
+    await test.hello({
       group: 'Admin',
       userPoolId: 'eu-central-1_uwf4A5M8a',
       userName: 'schmidphilipp1995@gmail.com'
