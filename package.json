@@ -4,15 +4,25 @@
   "description": "",
   "main": "handler.js",
   "scripts": {
-    "test": "jest -- handler.test.js"
+    "test": "jest"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@aws/dynamodb-data-mapper": "^0.7.3",
+    "@aws/dynamodb-data-mapper-annotations": "^0.7.3",
     "amazon-cognito-identity-js": "^3.0.7",
     "aws-amplify": "^1.1.19",
     "aws-sdk": "^2.411.0"
-  },"devDependencies": {
-    "jest": "^24.1.0"}
+  },
+  "devDependencies": {
+    "@types/jest": "^24.0.9",
+    "@types/node": "^11.10.4",
+    "jest": "^24.1.0",
+    "serverless-plugin-typescript": "^1.1.5",
+    "ts-jest": "^24.0.0",
+    "ts-node": "^8.0.2",
+    "typescript": "^3.3.3333"
+  }
 }
